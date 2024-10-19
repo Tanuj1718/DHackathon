@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { createDietPlan, getAllDietPlans } from "../controllers/diet.controller";
+import { createDietPlan, getAllDietPlans } from "../controllers/diet.controller.js";
 
 
 const router = Router()

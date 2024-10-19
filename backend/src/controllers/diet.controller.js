@@ -1,7 +1,7 @@
-import { Diet } from "../models/user.diet.models";
+import { Diet } from "../models/user.diet.models.js";
 
 // Create a new diet plan
-export const createDietPlan = async (req, res) => {
+const createDietPlan = async (req, res) => {
     const { dietName, description, startDate, endDate } = req.body;
 
     try {
@@ -20,7 +20,7 @@ export const createDietPlan = async (req, res) => {
 };
 
 // Get all diet plans
-export const getAllDietPlans = async (req, res) => {
+const getAllDietPlans = async (req, res) => {
     try {
         const diets = await Diet.find();
         return res.status(200).json(diets);
