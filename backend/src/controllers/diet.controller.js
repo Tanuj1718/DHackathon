@@ -1,6 +1,6 @@
 import { Diet } from "../models/user.diet.models.js";
 
-// Create a new diet plan
+
 const createDietPlan = async (req, res) => {
     const { dietName, description, startDate, endDate } = req.body;
 
@@ -19,7 +19,7 @@ const createDietPlan = async (req, res) => {
     }
 };
 
-// Get all diet plans
+
 const getAllDietPlans = async (req, res) => {
     try {
         const diets = await Diet.find();
