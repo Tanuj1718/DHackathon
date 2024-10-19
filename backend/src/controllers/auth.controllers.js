@@ -2,9 +2,7 @@ import { User } from "../models/user.models.js";
 import bcrypt from "bcryptjs"
 import jwt from "jsonwebtoken"
 import dotenv from "dotenv"
-import sendEmailVerificationOTP from "../utils/sendEmailVerificationOTP.js";
 import generateTokens from "../utils/generateTokens.js";
-import setTokenCookies from "../utils/setTokenCookies.js";
 dotenv.config({
     path: "./.env"
 })

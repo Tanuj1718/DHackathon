@@ -27,6 +27,8 @@ app.use(cookieParser())
 //import routes
 import signupRouter from "./routes/signup.routes.js"
 import signinRouter from "./routes/signin.routes.js"
+import aiResponseRouter from "./routes/AIresponse.routes.js"
 app.use('/user', signupRouter)
 app.use('/user', signinRouter)
+app.use('/user', aiResponseRouter)
 export {app}
