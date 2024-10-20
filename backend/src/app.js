@@ -10,7 +10,6 @@ dotenv.config({
 
 
 
-
 const corsOptions = {
   origin: 'http://localhost:3000', //use your frontend url
   credentials: true,
