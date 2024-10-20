@@ -1,0 +1,24 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "DHackathon/backend/src/**/*.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "DHackathon/backend/src/index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "DHackathon/backend/src/routes/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "DHackathon/backend/src/index.js"
+      }
+    ]
+  }
+  
